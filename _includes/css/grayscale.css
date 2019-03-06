@@ -17,6 +17,10 @@ html {
     height: 100%;
 }
 
+section{
+    background-color: #fff;
+}
+
 h1,
 h2,
 h3,
@@ -44,6 +48,18 @@ p {
     }
 }
 
+img {
+  display: block;
+  max-width:1440px;
+  max-height:720px;
+  width: auto;
+  height: auto;
+}
+
+.headerImg{
+  max-height: 40px;
+}
+
 a {
     color: {{ site.color.links }};
     -webkit-transition: all .2s ease-in-out;
@@ -65,7 +81,9 @@ a:focus {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);
     text-transform: uppercase;
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: 'romanticCouple';
+    color: transparent;
+    /*font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;*/
     background-color: {{ site.color.primary-dark }};
 }
 
@@ -80,7 +98,7 @@ a:focus {
 .navbar-custom .navbar-brand .navbar-toggle {
     padding: 4px 6px;
     font-size: 16px;
-    color: #fff;
+    /*color: #000;*/
 }
 
 .navbar-custom .navbar-brand .navbar-toggle:focus,
@@ -89,7 +107,13 @@ a:focus {
 }
 
 .navbar-custom a {
-    color: #fff;
+    color: transparent;
+    display: none;
+}
+
+.top-nav-collapse a{
+    color: #000;
+    display: block;
 }
 
 .navbar-custom .nav li.active {
@@ -123,7 +147,8 @@ a:focus {
 
     .top-nav-collapse {
         padding: 0;
-        background-color: {{ site.color.primary-dark }};
+        background-color: #fff;
+        box-shadow: 0 0 5px #ddd;
     }
 
     .navbar-custom.top-nav-collapse {
@@ -135,11 +160,12 @@ a:focus {
     display: table;
     width: 100%;
     height: auto;
-    padding: 100px 0;
+    padding: 0;
     text-align: center;
-    color: #fff;
-    background: url(/img/intro-bg.jpg) no-repeat bottom center scroll;
-    background-color: {{ site.color.primary-dark }};
+    color: #000;
+    /*background: url(/img/davetiye.png) no-repeat bottom center scroll;*/
+    background-color: #fff;
+    /*background-color: {{ site.color.primary-dark }};*/
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -147,6 +173,7 @@ a:focus {
 }
 
 .intro .intro-body {
+    font-family: 'romanticCouple';
     display: table-cell;
     vertical-align: middle;
 }
@@ -249,7 +276,7 @@ a:focus {
 }
 
 .content-section {
-    padding-top: 100px;
+    padding-top: 30px;
 }
 
 .download-section {
@@ -272,7 +299,7 @@ a:focus {
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 200px;
+        /*padding-top: 200px;*/
     }
 
     .download-section {

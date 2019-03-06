@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'romanticCouple';
+  src:
+      url('css/RomanticCouple.woff') format('woff'),
+      url('css/RomanticCouple.ttf') format('truetype'),
+      url('css/RomanticCouple.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.rc{
+  font-family: 'romanticCouple';
+}
