@@ -152,6 +152,10 @@ a:focus {
     display: none;
 }
 
+.top-nav-collapse{
+    display: block;
+}
+
 .top-nav-collapse a{
     color: #000;
     display: block;
