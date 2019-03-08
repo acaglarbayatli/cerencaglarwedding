@@ -75,6 +75,36 @@ img {
     width: 200px;
 }
 
+.formField{
+    outline: none;
+    border-width: 0 0 1px 0;
+    border-radius: 0;
+    color: #7C7068;
+    margin: 10px 0 10px 20px;
+}
+
+.kisalar{
+    width: 80%; 
+    margin-left: 10%;
+    height: 30%;
+}
+
+.kisa_baslik{
+    width: 30%;
+}
+
+.submit{
+    height: 100%;
+    width: 100px;
+    border: 1px solid #7C7068;
+    text-align: center;
+    vertical-align: middle;
+    background-color: #fff;
+    border-radius: 3px;
+    justify-content: center;
+    color: #7C7068;
+}
+
 a {
     color: #219ab3;
     -webkit-transition: all .2s ease-in-out;
@@ -368,6 +398,16 @@ ul.banner-social-buttons li {
     ul.banner-social-buttons {
         margin-top: 15px;
     }
+
+    .kisalar{
+        width: 96%; 
+        margin-left: 2%;
+        height: 20%;
+    }
+
+    .kisa_baslik{
+        width: 40%;
+    }
 }
 
 @media(max-width:767px) {
@@ -383,6 +423,16 @@ ul.banner-social-buttons li {
 
     .isim{
         width: 40%;
+    }
+
+    .kisalar{
+        width: 100%; 
+        margin-left: 0%;
+        height: 20%;
+    }
+
+    .kisa_baslik{
+        width: 50%;
     }
 }
 

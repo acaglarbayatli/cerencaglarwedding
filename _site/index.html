@@ -96,46 +96,135 @@
     </header>
 
         <!-- About Section -->
-    <section id="about" class="container content-section text-center" style="width: 100%; color: #000; height: 100%;">
-        <div class="row">
-            <div class="col-md-12">
-                <h1 class="brand-heading">LCV</h1>
-            </div>
-            <div class="col-md-12">
-                <p class="brand-heading">LÜTFEN 14 HAZİRAN TARİHİNE KADAR KATILIM DURUMUNUZU BİLDİRİNİZ</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <form>
-                  <div class="form-group row">
-                    <label for="colFormLabelSm" class="col-sm-6 col-form-label" style="text-align: right; font-size: 20px; font-weight: 100; padding-top: 10px;">DAVETE KATILACAK KİŞİ SAYISI</label>
-                    <div class="col-sm-6">
-                      <input type="email" class="form-control" id="colFormLabelSm" style="height: 40px; font-size: 16px">
+    <section id="about" class="intro" style="height: 100%; min-height: 500px; padding: 40px 0 20px;">
+      <div class="intro-in"  style="width: 100%; display: flex; flex-direction: row; justify-content: center; min-height: 440px; height: 100%;">
+            <div style="display: flex; flex-direction: column; justify-content: space-around; height: 100%; width: 90%; min-height: 440px;">
+                <div style="display: flex; flex-direction: row; justify-content: center; height: 10%;">
+                    <div style="display: flex; flex-direction: column; justify-content: center; height: 100%;">
+                        <img src="../img/lcv.png">
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: row; justify-content: center; height: 10%; width: 100%;">
+                    <div style="display: flex; flex-direction: column; justify-content: center; height: 100%;">
+                        <img src="../img/lcv_cumle.png" >
+                    </div>
+                </div>
+                <div style="display: flex; flex-direction: row; justify-content: space-around; height: 40%;">
+                  <form id="mailForm" action="https://formspree.io/cerencaglarwedding@gmail.com" method="POST" style="display: flex; flex-direction: column; justify-content: space-around; height: 100%; width: 100%;">
+                    <div style="display: flex; flex-direction: row; justify-content: center; height: 12%; width: 100%;">
+                        <div style="display: flex; flex-direction: row; justify-content: flex-end; height: 100%; width: 48%;">
+                          <div style="display: flex; flex-direction: column; justify-content: center; height: 100%;">
+                              <img src="../img/kisi_sayisi.png" >
+                          </div>
+                        </div>
+                        <div style="display: flex; flex-direction: row; justify-content: flex-start; height: 100%; width: 52%;">
+                          <div style="display: flex; flex-direction: column; justify-content: center; height: 100%; width: 100%;">
+                              <select name="kisi_sayisi" class="formField" id="kisisayisi" style="max-width: 400px; margin: 0 10px;">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                              </select>
+                          </div>
+                        </div>
+                    </div>
+                    <div id="ad_soyad1" style="display: flex; flex-direction: row; justify-content: center; height: 10%; width: 100%;">
+                        <div style="display: flex; flex-direction: row; justify-content: flex-end; height: 100%; width: 18%; margin-left: 30%;">
+                          <div style="display: flex; flex-direction: column; justify-content: center; height: 100%;">
+                              <img src="../img/ad_soyad.png" >
+                          </div>
+                        </div>
+                        <div style="display: flex; flex-direction: row; justify-content: flex-start; height: 100%; width: 52%;">
+                          <div style="display: flex; flex-direction: column; justify-content: center; height: 100%; width: 100%;">
+                              <input name="isim1" type="ad_soyad" class="formField" style="max-width: 400px;">
+                          </div>
+                        </div>
+                    </div>
+                    <div id="ad_soyad2" style="display: none; flex-direction: row; justify-content: center; height: 10%; width: 100%;">
+                        <div style="display: flex; flex-direction: row; justify-content: flex-end; height: 100%; width: 18%; margin-left: 30%;">
+                          <div style="display: flex; flex-direction: column; justify-content: center; height: 100%;">
+                              <img src="../img/ad_soyad.png" >
+                          </div>
+                        </div>
+                        <div style="display: flex; flex-direction: row; justify-content: flex-start; height: 100%; width: 52%;">
+                          <div style="display: flex; flex-direction: column; justify-content: center; height: 100%; width: 100%;">
+                              <input name="isim2" type="ad_soyad" class="formField" style="max-width: 400px;">
+                          </div>
+                        </div>
+                    </div>
+                    <div id="ad_soyad3" style="display: none; flex-direction: row; justify-content: center; height: 10%; width: 100%;">
+                        <div style="display: flex; flex-direction: row; justify-content: flex-end; height: 100%; width: 18%; margin-left: 30%;">
+                          <div style="display: flex; flex-direction: column; justify-content: center; height: 100%;">
+                              <img src="../img/ad_soyad.png" >
+                          </div>
+                        </div>
+                        <div style="display: flex; flex-direction: row; justify-content: flex-start; height: 100%; width: 52%;">
+                          <div style="display: flex; flex-direction: column; justify-content: center; height: 100%; width: 100%;">
+                              <input name="isim3" type="ad_soyad" class="formField" style="max-width: 400px;">
+                          </div>
+                        </div>
+                    </div>
+                    <div id="ad_soyad4" style="display: none; flex-direction: row; justify-content: center; height: 10%; width: 100%;">
+                        <div style="display: flex; flex-direction: row; justify-content: flex-end; height: 100%; width: 18%; margin-left: 30%;">
+                          <div style="display: flex; flex-direction: column; justify-content: center; height: 100%;">
+                              <img src="../img/ad_soyad.png" >
+                          </div>
+                        </div>
+                        <div style="display: flex; flex-direction: row; justify-content: flex-start; height: 100%; width: 52%;">
+                          <div style="display: flex; flex-direction: column; justify-content: center; height: 100%; width: 100%;">
+                              <input name="isim4" type="ad_soyad" class="formField" style="max-width: 400px;">
+                          </div>
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: row; justify-content: center; height: 10%; width: 100%;">
+                        <div style="display: flex; flex-direction: row; justify-content: flex-end; height: 100%; width: 18%; margin-left: 30%;">
+                          <div style="display: flex; flex-direction: column; justify-content: center; height: 100%;">
+                              <img src="../img/mail.png" >
+                          </div>
+                        </div>
+                        <div style="display: flex; flex-direction: row; justify-content: flex-start; height: 100%; width: 52%;">
+                          <div style="display: flex; flex-direction: column; justify-content: center; height: 100%; width: 100%;">
+                              <input name="e_mail" type="email" class="formField" id="colFormLabelSm" style="max-width: 400px;">
+                          </div>
+                        </div>
+                    </div>
+                    <div style="display: flex; flex-direction: row; justify-content: center; height: 10%; width: 100%;">
+                        <div style="display: flex; flex-direction: row; justify-content: center; height: 100%; width: 100%;">
+                          <div style="display: flex; flex-direction: column; justify-content: center; height: 100%;">
+                              <button class="submit" type="submit"><p style="font-size: 14px; line-height: 14px; margin: 0;">Katıl</p></button>
+                          </div>
+                        </div>
+                    </div>
+                    <input type="hidden" name="_next" value="https://cerencaglarwedding.com/thanks"/>
+                  </form>
+                </div>
+                <div style="display: flex; flex-direction: row; justify-content: center; height: 5%;">
+                    <div style="display: flex; flex-direction: column; justify-content: center; height: 100%; max-width: 70%;">
+                        <img src="../img/cocuk.png">
+                    </div>
+                </div>
+                <div class="kisalar" style="display: flex; flex-direction: column; justify-content: space-around; width: 100%; margin: 0;">
+                  <div style="display: flex; flex-direction: row; justify-content: center; height: 20%;">
+                    <div class="kisa_baslik" style="display: flex; flex-direction: column; justify-content: center; height: 100%;">
+                        <img src="../img/kisa_hatirlatmalar.png">
                     </div>
                   </div>
-                  <div class="form-group row">
-                    <label for="colFormLabel" class="col-sm-6 col-form-label" style="text-align: right; font-size: 20px; font-weight: 100; padding-top: 10px;">AD / SOYAD</label>
-                    <div class="col-sm-6">
-                      <input type="email" class="form-control" id="colFormLabel" style="height: 40px; font-size: 16px">
+                  <div class="kisalar" style="display: flex; flex-direction: row; justify-content: space-around; height: 80%;">
+                    <div style="display: flex; flex-direction: column; justify-content: center; height: 100%;">
+                        <img src="../img/kisa_bos.png">
                     </div>
-                  </div>
-                  <div class="form-group row">
-                    <label for="colFormLabelLg" class="col-sm-6 col-form-label" style="text-align: right; font-size: 20px; font-weight: 100; padding-top: 10px;">EMAIL ADRESi</label>
-                    <div class="col-sm-6">
-                      <input type="email" class="form-control" id="colFormLabelLg" style="height: 40px; font-size: 16px">
+                    <div style="display: flex; flex-direction: column; justify-content: center; height: 100%;">
+                        <img src="../img/kisa_pap.png">
                     </div>
-                  </div>
-                </form>
-            </div>
-        </div>
-        <div class="row" style="padding-top: 30px;">
-            <div class="col-md-12">
-                <p class="brand-heading">ÇOCUKLARA İYİ GECELER</p>
-            </div>
-            <div class="col-md-12">
-                <div>
-
+                    <div style="display: flex; flex-direction: column; justify-content: center; height: 100%;">
+                        <img src="../img/kisa_gozluk.png">
+                    </div>
+                    <div style="display: flex; flex-direction: column; justify-content: center; height: 100%;">
+                        <img src="../img/kisa_ayak.png">
+                    </div>
+                    <div style="display: flex; flex-direction: column; justify-content: center; height: 100%;">
+                        <img src="../img/kisa_hash.png">
+                    </div>
                 </div>
             </div>
         </div>

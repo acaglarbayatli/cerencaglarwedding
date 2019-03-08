@@ -35,6 +35,16 @@ $("a").mouseup(function(){
     $(this).blur();
 })
 
+$(function(){   //function for hide/show conditional question
+    $("select").bind('change',function (event) {
+        var number = parseInt($( "select option:selected" ).val());
+        $("#ad_soyad1").stop().css({display: number>=1?'flex':'none'});
+        $("#ad_soyad2").stop().css({display: number>=2?'flex':'none'});
+        $("#ad_soyad3").stop().css({display: number>=3?'flex':'none'});
+        $("#ad_soyad4").stop().css({display: number>=4?'flex':'none'});
+    });
+});
+
 // Google Maps Scripts
 // When the window has finished loading create our google map below
 google.maps.event.addDomListener(window, 'load', init);
