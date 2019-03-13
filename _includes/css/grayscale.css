@@ -85,7 +85,10 @@ img {
 }
 
 .kisa_baslik{
-    width: 30%;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .submit{
@@ -154,6 +157,7 @@ a:focus {
 
 .top-nav-collapse{
     display: block;
+    box-shadow: 0 0 5px #ddd;
 }
 
 .top-nav-collapse a{
@@ -405,7 +409,7 @@ ul.banner-social-buttons li {
     }
 
     .kisa_baslik{
-        width: 50%;
+        width: 70%;
     }
 }
 
@@ -431,7 +435,7 @@ ul.banner-social-buttons li {
     }
 
     .kisa_baslik{
-        width: 70%;
+        width: 100%;
     }
 
     .cocuk{
