@@ -42,8 +42,48 @@ $(function(){   //function for hide/show conditional question
         $("#ad_soyad2").stop().css({display: number>=2?'flex':'none'});
         $("#ad_soyad3").stop().css({display: number>=3?'flex':'none'});
         $("#ad_soyad4").stop().css({display: number>=4?'flex':'none'});
+        $("#ad_soyad1_input").attr('required',Boolean(number>=1));
+        $("#ad_soyad2_input").attr('required',Boolean(number>=2));
+        $("#ad_soyad3_input").attr('required',Boolean(number>=3));
+        $("#ad_soyad4_input").attr('required',Boolean(number>=4));
     });
 });
+
+// $(function(){ 
+//     $("#ad_soyad1").focus(function (event) {
+//         $("#ad_soyad1_err").stop().css({display: 'none'});
+//     });
+// });
+
+// $(function(){ 
+//     $("#lcvSubmit").click(function (event) {
+//         // event.preventDefault();
+//         var number = parseInt($( "select option:selected" ).val());
+//         var ad1 = $( "#ad_soyad1" ).val();
+//         var ad2 = $( "#ad_soyad2" ).val();
+//         var ad3 = $( "#ad_soyad3" ).val();
+//         var ad4 = $( "#ad_soyad4" ).val();
+//         if((number>=1&&ad1.match(/[\w]+/)) 
+//             || (number>=2&&ad2.match(/[\w]+/)) 
+//             || (number>=3&&ad3.match(/[\w]+/)) 
+//             || (number>=4&&ad4.match(/[\w]+/))){
+//             console.log("form submit prevented");
+//             event.preventDefault();
+//         }
+//         $("#ad_soyad1_err").stop().css({display: number>=1&&ad1.match(/[\w]+/)?'none':'flex'});
+//         $("#ad_soyad2_err").stop().css({display: number>=2&&ad2.match(/[\w]+/)?'none':'flex'});
+//         $("#ad_soyad3_err").stop().css({display: number>=3&&ad3.match(/[\w]+/)?'none':'flex'});
+//         $("#ad_soyad4_err").stop().css({display: number>=4&&ad4.match(/[\w]+/)?'none':'flex'});
+//         console.log((number>=1&&ad1.match(/[\w]+/)), (number>=2&&ad2.match(/[\w]+/)), (number>=3&&ad3.match(/[\w]+/)), (number>=4&&ad4.match(/[\w]+/)))
+//         if((number>=1&&ad1.match(/[\w]+/)) 
+//             || (number>=2&&ad2.match(/[\w]+/)) 
+//             || (number>=3&&ad3.match(/[\w]+/)) 
+//             || (number>=4&&ad4.match(/[\w]+/))){
+//             console.log("form submit prevented");
+//             event.preventDefault();
+//         }
+//     });
+// });
 
 // Google Maps Scripts
 // When the window has finished loading create our google map below
